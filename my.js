@@ -1,15 +1,15 @@
 function myFunc(){
-    var x = document.getElementById("password")
-    var hide1 = document.getElementById("hide1")
-    var hide2 = document.getElementById("hide2")
+    var pasw = document.getElementById("password");
+    var show = document.getElementById("show");
+    var hide = document.getElementById("hide");
 
-    if(x.type === 'password'){
-        x.type = 'text'
-        hide2.style.display = 'block'
-        hide1.style.display = 'none'
+    if(pasw.type === 'password'){
+        pasw.type = 'text';
+        hide.style.display = 'block';
+        show.style.display = 'none';
     }else{
-        x.type = 'password'
-        hide2.style.display = 'none'
-        hide1.style.display = 'block'
-    }
-}
+        pasw.type = 'password';
+        hide.style.display = 'none';
+        show.style.display = 'block';
+    };
+};
